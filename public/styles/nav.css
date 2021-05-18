@@ -22,3 +22,14 @@ nav span {
     display: flex;
     justify-content: space-between;
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
+body { 
+    padding-top: 90px; 
+}
