@@ -7,23 +7,28 @@
     justify-content: center;
     margin-left: 10px;
     margin-right: 10px;
+    width: 100%;
 }
 
 .form-container {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
-    margin-right: 10px
+    margin-right: 10px;
+    width: 100%;
 }
 
+/* heading compose tweet */
 main section h2 {
     font-size: 40px;
 }
 
+/* label above text box */
 .label {
     font-size: 30px
 }
 
+/* tweet button */
 button {
     background-color: #4056A1;
     font-family: 'Bungee';
@@ -43,7 +48,7 @@ main section form div {
 /* styling for text box to input tweet */
 textarea {
     height: 50px;
-    width: 700px;
+    width: 100%;
     margin-bottom: 10px;
     background-color: #f4f1ec;
     border-width: 5px;
@@ -51,7 +56,6 @@ textarea {
     border-right: #f4f1ec;
     border-left: #f4f1ec;
     border-bottom-color:  #4056A1;
-    resize: horizontal;
 }
 
 /* styling for numbers - 140 */
@@ -62,6 +66,7 @@ textarea {
     padding-top: 5px;
 }
 
+/* words inside text box */
 #tweet-text {
     width: 100%;
     font-size: 25px;
