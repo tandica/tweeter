@@ -10,9 +10,7 @@ html {
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
+/* global layout */
 
 body {
   color: #545149;
@@ -22,16 +20,10 @@ body {
 }
 
 main.container {
-  /* width: 90%;
-  display: flex;
-  align-items: center; */
-
   display: flex;
   align-items: center;
   flex-direction: column;
   position: relative;
   width:100%;
-  /* padding-left: 1em; */
   background-color: #f4f1ec;
-
 }

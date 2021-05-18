@@ -12,6 +12,7 @@
     margin-bottom: 50px;
 }
 
+/* user name styling */
 .tweet-container h4 {
     display: flex;
     align-items: flex-start;
@@ -22,11 +23,13 @@
     margin: 0;
 }
 
+/* actual tweet styling */
 .tweet-container p {
     font-size: 25px;
     padding-left: 1.3em;
 }
 
+/* create border beneath tweet that doe not stretch to the end of the container */
 .outer-border {
     background-color: #f4f1ec;
     margin: 20px;
@@ -40,6 +43,7 @@
     margin: auto;
 }
 
+/* style users @ name */
 .tweet-container h5 {
     display: flex;
     padding-right: 1rem;
@@ -51,6 +55,7 @@
     opacity: 60%;
 }
 
+/* placing and sizing icons */
 .tweet-container i {
     float: right;
     font-size: 0.6em;
@@ -58,6 +63,7 @@
     padding-right: 1rem
 }
 
+/* hover colour changes */
 .tweet-container i:hover {
     color:rgb(231, 163, 197);
 }
@@ -67,7 +73,7 @@ article.tweet-container:hover {
     box-shadow: 10px 10px #bfbfc0;
 }
 
-
+/* implement styling to timeago font */
 .timeago {
     font-size: 0.4em;
     padding-left: 2em;

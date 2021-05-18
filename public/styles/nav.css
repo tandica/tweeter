@@ -15,6 +15,7 @@ nav span {
     padding-right: 1.5em;
 }
 
+/* display logo and arrows */
 .container {
     font-size: 40px;
     padding-left: 1.5em;
@@ -23,6 +24,7 @@ nav span {
     justify-content: space-between;
 }
 
+/* enable seeing the navbar while scrolling */
 .sticky {
     position: fixed;
     top: 0;
