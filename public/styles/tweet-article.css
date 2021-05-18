@@ -37,7 +37,7 @@
     border-bottom: 4px solid #4056A1;
     height: 0.1em;
     width: 96%;
-    margin: 0px auto;
+    margin: auto;
 }
 
 .tweet-container h5 {
@@ -59,7 +59,7 @@
 }
 
 .tweet-container i:hover {
-    color:rgb(226, 79, 153);
+    color:rgb(231, 163, 197);
 }
 
 article.tweet-container:hover {
@@ -70,4 +70,5 @@ article.tweet-container:hover {
 
 .timeago {
     font-size: 0.4em;
+    padding-left: 1.5em;
 }
