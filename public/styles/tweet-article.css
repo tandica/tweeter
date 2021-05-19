@@ -63,6 +63,18 @@
     padding-right: 1rem
 }
 
+#icon {
+    float: left;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+    font-size: 40px;
+    position: relative;
+    top: -1.4em;
+    margin: 0;
+}
+
 /* hover colour changes */
 .tweet-container i:hover {
     color:rgb(231, 163, 197);
