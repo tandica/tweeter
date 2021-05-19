@@ -4,43 +4,6 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-// const tweetData = {
-//     "user": {
-//         "name": "Newton",
-//         "avatars": "https://i.imgur.com/73hZDYK.png",
-//         "handle": "@SirIsaac"
-//     },
-//     "content": {
-//         "text": "If I have seen further it is by standing on the shoulders of giants"
-//     },
-//     "created_at": 1461116232227
-// }
-
-//const $tweet = $(`<article class="tweet">Hello world</article>`);
-
-// const data = [{
-//     "user": {
-//         "name": "Newton",
-//         "avatars": "https://i.imgur.com/73hZDYK.png",
-//         "handle": "@SirIsaac"
-//     },
-//     "content": {
-//         "text": "If I have seen further it is by standing on the shoulders of giants"
-//     },
-//     "created_at": 1461116232227
-//     },
-//     {
-//     "user": {
-//         "name": "Descartes",
-//         "avatars": "https://i.imgur.com/nlhLi3I.png",
-//         "handle": "@rd" },
-//     "content": {
-//         "text": "Je pense , donc je suis"
-//     },
-//     "created_at": 1461113959088
-//     }
-// ]
-
 
 $(document).ready(function() {
 
@@ -81,10 +44,20 @@ $(document).ready(function() {
         }
     }
 
+
+
 //add event listener submit
     $(".form-container").submit(function(event) {
         event.preventDefault();
         let formData = $(".form-container").serialize();
+        const tweet = $('#tweet-text').val();
+        if (tweet.length === 0) {
+            alert('Please write a tweet')
+        } else if (tweet.length > 140) {
+            alert('Too many characters')
+        }
+
+        console.log('tweet:', tweet);
         console.log(formData); //not showing up
         $.ajax({url: "/tweets", type: "POST", data: formData, dataType: "text"})
             .then(() => loadTweets());
