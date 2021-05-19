@@ -42,14 +42,11 @@ const data = [{
 ]
 
 
-
 $(document).ready(function() {
     const renderTweets = function(tweets) {
         for (let tweet of tweets) {
             let $tweet = createTweetElement(tweet);
-            console.log($tweet);
             $('.tweets-container').append($tweet);
-            console.log($('.tweets-container'))
         }
     }
     renderTweets(data);
@@ -75,6 +72,10 @@ const createTweetElement = function (tweet) {
     return $tweet;
 }
 
-
-//const $tweet = createTweetElement(tweetData);
-//console.log($tweet); 
+//add event listener submit
+$(".form-container").submit(function(event) {
+    event.preventDefault();
+    let formData = $(".form-container").serialize();
+    console.log(formData)
+    $.ajax({url: "/tweets", type: "POST", data: formData, dataType: "text"}).then(response => console.log(response))
+})
