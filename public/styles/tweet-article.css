@@ -6,8 +6,10 @@
     position: relative;
     padding-top: 1em;
     margin-top: 50px;
-    padding-bottom: 0.75em;
+    padding-bottom: 2em;
     margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .tweets-container {
@@ -21,7 +23,7 @@
     padding-left: 3em;
     font-size: 30px;
     position: relative;
-    top: -2.5em;
+    top: -1.9em;
     margin: 0;
 }
 
@@ -31,7 +33,7 @@
     padding-right: 1rem;
     font-size: 30px;
     position: relative;
-    top: -1em;
+    top: 0.2em;
     margin: 0;
     float: right;
     opacity: 60%;
@@ -49,7 +51,7 @@
 /* create border beneath tweet that doe not stretch to the end of the container */
 .outer-border {
     background-color: #f4f1ec;
-    margin: 20px;
+    margin: 0px;
     padding: 10px 10px 0px 10px;
 }
 
@@ -63,9 +65,10 @@
 /* placing and sizing icons */
 .tweet-container i {
     float: right;
-    font-size: 0.6em;
-    padding-top: 0.7em;
-    padding-right: 0.75em
+    font-size: 0.9em;
+    padding-top: 0.5em;
+    padding-right: 1.5em;
+    color: #4056A1;
 }
 
 .tweet-container img {
@@ -74,19 +77,7 @@
     padding-left: 0.5em;
     font-size: 30px;
     position: relative;
-    top: -0.8em;
-    margin: 0;
-}
-
-#icon {
-    float: left;
-    display: flex;
-    align-items: flex-start;
-    padding-left: 1rem;
-    padding-right: 0.5rem;
-    font-size: 40px;
-    position: relative;
-    top: -1.4em;
+    top: -0.2em;
     margin: 0;
 }
 
@@ -102,8 +93,9 @@ article.tweet-container:hover {
 
 /* implement styling to timeago font */
 .timeago {
-    font-size: 0.4em;
+    font-size: 0.75em;
     padding-left: 2em;
+    padding-top: 2em;
 }
 
 /* error message styling */

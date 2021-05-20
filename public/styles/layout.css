@@ -27,3 +27,13 @@ main.container {
   width:100%;
   background-color: #f4f1ec;
 }
+
+/* responsive design */
+@media only screen and (min-width: 1024px) {
+  .responsive {
+      display: flex;
+      margin-top: 200px;
+      margin-left: 50px;
+      margin-right: 50px;
+  }
+}

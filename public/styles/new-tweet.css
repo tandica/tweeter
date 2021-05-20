@@ -23,11 +23,6 @@ main section h2 {
     font-size: 40px;
 }
 
-/* label above text box */
-.label {
-    font-size: 30px
-}
-
 /* tweet button */
 button {
     background-color: #4056A1;
@@ -56,6 +51,7 @@ textarea {
     border-right: #f4f1ec;
     border-left: #f4f1ec;
     border-bottom-color:  #4056A1;
+    
 }
 
 /* styling for numbers - 140 */
@@ -71,3 +67,4 @@ textarea {
     width: 100%;
     font-size: 25px;
 }
+
