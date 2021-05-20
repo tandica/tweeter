@@ -55,7 +55,8 @@
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
         <form class="form-container" action="/tweets" method="POST">
-          <label class="label" for="tweet-text"></label>
+          <label class="error-empty-form"><strong>Please write a tweet.</strong></label>
+          <label class="error-exceeds-char"><strong>Too many characters. Please use 140 characters.</strong></label>
           <textarea name="text" id="tweet-text" placeholder= "What are you humming about?"></textarea>
           <div>
             <button type="submit">Tweet</button>

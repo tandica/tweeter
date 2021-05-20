@@ -13,5 +13,4 @@ $(document).ready(function() {
             $characters.css("color", "#4056A1");
         }
     })
-
 });
