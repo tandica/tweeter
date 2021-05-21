@@ -4,8 +4,9 @@ Tweeter is a simple, single-page Twitter clone that uses AJAX, jQuery, JavaScrip
 
 ## Final Product
 
-!["Desktop screen"]()
-!["Mobile screen"]()
+!["Desktop screen"](https://github.com/tandica/tweeter/blob/master/docs/deskscreen.png?raw=true)
+
+!["Mobile screen"](https://github.com/tandica/tweeter/blob/master/docs/mobilescreen.png?raw=true)
 
 
 
