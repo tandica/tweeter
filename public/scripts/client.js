@@ -5,6 +5,7 @@
  */
 
 $(document).ready(function () {
+  
   //fetch tweets from /tweets page
   const loadTweets = function () {
     $(".tweets-container").empty();

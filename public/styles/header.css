@@ -15,11 +15,13 @@ header {
   padding-bottom: 1.5em;
 }
 
+/* name on header */
 .name {
   margin-top: 0px;
   font-weight: normal;
 }
 
+/* profile picture */
 .headercontainer img {
   width: 250px;
   height: 250px;
