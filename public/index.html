@@ -5,9 +5,16 @@
     <title>Tweeter - Home Page</title>
 
     <!-- External CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Apply CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
@@ -15,17 +22,31 @@
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
     <link rel="stylesheet" href="/styles/tweet-article.css" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/styles/media-query.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="dist/timeago.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
+      integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer">
+    </script>
 
     <!-- Apply JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
-    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
-  
+    <script
+      type="text/javascript"
+      src="/scripts/composer-char-counter.js">
+    </script>
+
     <script type="text/javascript" src="/scripts/navbar-scroll.js"></script>
   </head>
 
@@ -36,39 +57,45 @@
         <span>tweeter</span>
         <i class="fas fa-angle-double-down"></i>
       </div>
-      <p>Write a new tweet</p>
+      <p><strong>Write </strong> a new tweet</p>
     </nav>
     <div class="responsive">
-    <header>
-      <div class="headercontainer">
-      <div>
-          <img src="/images/profile-hex.png"> 
-      </div>
-      <br>
-      <div>
-          <h2 class='name'>Tandica Williams</h2>
-      </div>
-    </div>
-  </header>
-
-
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      <section class="new-tweet">
-        <!-- <h2>Compose Tweet</h2> -->
-        <form class="form-container" action="/tweets" method="POST">
-          <label class="error-empty-form"><strong>Please write a tweet.</strong></label>
-          <label class="error-exceeds-char"><strong>Too many characters. Please use 140 characters.</strong></label>
-          <textarea name="text" id="tweet-text" placeholder= "What are you humming about?"></textarea>
+      <header class="headercontainer">
+        <div>
           <div>
-            <button type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
+            <img src="/images/profile-hex.png" />
           </div>
-        </form>
-      </section>
-    <article class="tweets-container">
-      </article> 
-    </main>
-  </div>
+          <br />
+          <div>
+            <h2 class="name"><strong>Tandica</strong> Williams</h2>
+          </div>
+        </div>
+      </header>
+
+      <!-- Page-specific (main) content here -->
+      <main class="container">
+        <section class="new-tweet">
+          <!-- <h2>Compose Tweet</h2> -->
+          <form class="form-container" action="/tweets" method="POST">
+            <label class="error-empty-form"
+              ><strong>Please write a tweet.</strong></label>
+            <label class="error-exceeds-char"
+              ><strong
+                >Too many characters. Please use 140 characters.</strong>
+              </label>
+            <textarea
+              name="text"
+              id="tweet-text"
+              placeholder="What are you humming about?">
+            </textarea>
+            <div>
+              <button type="submit">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text">140</output>
+            </div>
+          </form>
+        </section>
+        <article class="tweets-container"></article>
+      </main>
+    </div>
   </body>
 </html>

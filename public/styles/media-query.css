@@ -1,0 +1,23 @@
+/* responsive design */
+
+@media only screen and (min-width: 786px) {
+  .responsive {
+    display: flex;
+    margin-top: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 100%;
+  }
+
+  .headercontainer {
+    width: 30%;
+  }
+
+  main.container {
+    width: 30%;
+  }
+
+  .new-tweet .form-container {
+    margin-top: 0px;
+  }
+}

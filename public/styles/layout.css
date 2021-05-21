@@ -24,16 +24,12 @@ main.container {
   align-items: center;
   flex-direction: column;
   position: relative;
-  width:100%;
+  width: auto;
   background-color: #f4f1ec;
+  flex: 1 1 auto;
 }
 
-/* responsive design */
-@media only screen and (min-width: 1024px) {
-  .responsive {
-      display: flex;
-      margin-top: 200px;
-      margin-left: 50px;
-      margin-right: 50px;
-  }
+/* slight change to the layout of the compose tweet box */
+.new-tweet .form-container {
+  margin-top: 37px;
 }

@@ -1,70 +1,68 @@
 /* new tweet styling */
 
 .new-tweet {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 100%;
 }
 
 .form-container {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 100%;
 }
 
 /* heading compose tweet */
 main section h2 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 /* tweet button */
 button {
-    background-color: #4056A1;
-    font-family: 'Bungee';
-    color: #f4f1ec;
-    font-size: 20px;
-    padding-top: .5em;                        
-    padding-bottom: 0.5em;
-    border: 0em;
+  background-color: #4056a1;
+  font-family: "Bungee";
+  color: #f4f1ec;
+  font-size: 20px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border: 0em;
 }
 
 /* button and character count 140 spacing */
 main section form div {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* styling for text box to input tweet */
 textarea {
-    height: 50px;
-    width: 100%;
-    margin-bottom: 10px;
-    background-color: #f4f1ec;
-    border-width: 5px;
-    border-top: #f4f1ec;
-    border-right: #f4f1ec;
-    border-left: #f4f1ec;
-    border-bottom-color:  #4056A1;
-    
+  height: 50px;
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: #f4f1ec;
+  border-width: 5px;
+  border-top: #f4f1ec;
+  border-right: #f4f1ec;
+  border-left: #f4f1ec;
+  border-bottom-color: #4056a1;
 }
 
 /* styling for numbers - 140 */
 .counter {
-    font-family: 'Bungee'; 
-    color: #4056A1;
-    font-size: 30px;
-    padding-top: 5px;
+  font-family: "Bungee";
+  color: #4056a1;
+  font-size: 30px;
+  padding-top: 5px;
 }
 
 /* words inside text box */
 #tweet-text {
-    width: 100%;
-    font-size: 25px;
+  width: 100%;
+  font-size: 25px;
 }
-

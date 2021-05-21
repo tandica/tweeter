@@ -1,26 +1,26 @@
 /* header styling */
 
 header {
-    height: 400px;
-    width: 100%;
-    background-color: #aebef2;
-    background-image: url("https://www.transparenttextures.com/patterns/tiny-grid.png");
+  height: 400px;
+  width: 100%;
+  background-color: #aebef2;
+  background-image: url("https://www.transparenttextures.com/patterns/tiny-grid.png");
 }
 
 .headercontainer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-    
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
 }
 
 .name {
-    margin-top: 0px;
+  margin-top: 0px;
+  font-weight: normal;
 }
 
 .headercontainer img {
-    width: 250px;
-    height: 250px;
+  width: 250px;
+  height: 250px;
 }
